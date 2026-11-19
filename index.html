@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Blocky craft island</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div id="loadingScreen">
+  <div class="loadingBox">
+    <h1>BLOCKCRAFT</h1>
+    <p id="loadingText">Insel wird geladen...</p>
+    <div class="loadingBar"><div id="loadingFill"></div></div>
+    <span id="loadingPercent">0%</span>
+  </div>
+</div>
+
+<div id="menu">
+  <div class="menuBox">
+    <h1>BLOCKCRAFT</h1>
+    <p class="subtitle">ISLAND SURVIVAL</p>
+
+    <input id="codeInput" placeholder="Welt-Code eingeben">
+    <button id="loadWorldBtn">Welt laden</button>
+
+    <input id="saveCodeInput" placeholder="Neuen Welt-Code erstellen">
+    <button id="newWorldBtn">Neue Welt erstellen</button>
+
+    <p id="menuMessage"></p>
+  </div>
+</div>
+
+<div id="game">
+  <div id="topLeft">
+    <div id="health">♥ ♥ ♥ ♥ ♥</div>
+    <div id="blockyTime">☀ 08:00</div>
+  </div>
+
+  <div id="topRight">
+    <div id="dayCounter">1 Day</div>
+    <div id="enemyCounter">Insel sicher</div>
+  </div>
+
+  <div id="crosshair">+</div>
+  <div id="cameraMode">Ego-Perspektive</div>
+
+  <div id="hotbar"></div>
+
+  <div id="hint">
+    WASD bewegen · Leertaste springen · Linksklick abbauen ·
+    Rechtsklick platzieren · E Inventar · F5/V Kamera · F10 Vollbild
+  </div>
+
+  <button id="fullscreenBtn">⛶ F10</button>
+
+  <div id="gameMessage"></div>
+
+  <div id="inventoryPanel" class="overlay hidden">
+    <div class="panel">
+      <h2>Inventar</h2>
+      <div id="inventoryItems"></div>
+      <button id="closeInventoryBtn">Schließen</button>
+    </div>
+  </div>
+
+  <div id="pausePanel" class="overlay hidden">
+    <div class="panel">
+      <h2>Pausiert</h2>
+      <button id="resumeBtn">Weiter</button>
+      <button id="saveBtn">Welt speichern</button>
+      <button id="backMenuBtn">Hauptmenü</button>
+    </div>
+  </div>
+</div>
+
+<audio id="menuMusic" loop preload="auto"></audio>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
